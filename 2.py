@@ -1,0 +1,8 @@
+print("Introduce un numero")
+numero1 = input()
+print("Introduce un numero")
+numero2 = input()
+print(numero1,", ", numero2)
+print("Hola m")
+print("MAAAANOOOOOOO")
+print("PACOOOOO")
