@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Emmanuelli</title>
+  <style>
+    /* Estilos generales */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #00aaff, 0 0 40px #00aaff;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 40px #00ccff, 0 0 60px #00ccff;
+      }
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    .decor {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.3;
+      animation: float 8s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .circle1 {
+      width: 120px;
+      height: 120px;
+      background: #00ccff;
+      top: 15%;
+      left: 10%;
+      animation-delay: 0s;
+    }
+
+    .circle2 {
+      width: 200px;
+      height: 200px;
+      background: #ff0099;
+      bottom: 10%;
+      right: 15%;
+      animation-delay: 2s;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="circle1 decor"></div>
+  <div class="circle2 decor"></div>
+
+  <h1>Carlos Emmanuelli</h1>
+  <p>Desarrollador | Creativo | Apasionado por la tecnología</p>
+
+  <footer>© 2025 - Página personal</footer>
+</body>
+</html>
